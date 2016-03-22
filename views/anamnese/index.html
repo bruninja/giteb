@@ -1,0 +1,53 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <meta charset="utf-8">
+    <title>Ficha de Anamnese</title>
+
+    <!-- CSS -->
+    <link rel="stylesheet" href="https://bootswatch.com/spacelab/bootstrap.min.css">
+    <link rel="stylesheet" href="style.css">
+
+    <!-- JS -->
+    <!-- load angular, nganimate, and ui-router -->
+    <script src="libs/angular.min.js"></script>
+    <script src="libs/angular-ui-router.min.js"></script>
+    <script src="libs/angular-animate.min.js"></script>
+    <script src="app.js"></script>
+
+</head>
+<body ng-app="formApp">
+
+<!-- views will be injected here -->
+<div class="container">
+  <div class="text-center">
+    <img src="logo.png" alt="">
+  </div>
+  <br>
+  <div ui-view></div>
+</div>
+
+<div class="row">
+    <div class="col-lg-10 col-lg-offset-1 text-center">
+        <h4><strong>Estrela Brilhante</strong></h4>
+        <p>
+          1º Travessa da Rua do Campo, nº04
+          <br>
+          (Estrada de Ribamar 3km do Maiobão)
+          <br>
+          Paço do Lumiar - MA
+          <br>
+        </p>
+        <ul class="list-unstyled">
+            <li><i class="fa fa-phone fa-fw"></i> (098) 3237-1685</li>
+            <li><i class="fa fa-envelope-o fa-fw"></i>  <a href="mailto:cicebris@hotmail.com">cicebris@hotmail.com</a>
+            </li>
+        </ul>
+        <hr class="small">
+        <p>CICEBRIS &copy; Estrela Brilhante 2016</p>
+        <img src="estrelabrilhante.png"><br><br>
+    </div>
+</div>
+
+</body>
+</html>

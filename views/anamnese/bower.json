@@ -1,0 +1,14 @@
+{
+  "name": "Ficha de Anamnese",
+  "authors": [
+    "Bruno Ninja <bruno.carvalho@hotmail.de>"
+  ],
+  "description": "Módulo Formulário da Ficha de Anamnese",
+  "main": "anamnese.html",
+  "moduleType": [],
+  "license": "MIT",
+  "homepage": "",
+  "dependencies": {
+    "angular-animate": "^1.5.2"
+  }
+}

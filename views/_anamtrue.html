@@ -1,0 +1,710 @@
+<form id="msform" class="form-horizontal" action="php/script.php" method="post">
+	<!-- fieldsets -->
+	<fieldset>
+
+	<!-- Form Name -->
+		<h3>Dados Pessoais</h3>
+		<hr>
+
+			<!-- Text input-->
+			<div class="form-group">
+			  <label class="col-md-4 control-label" for="nome">Nome Completo</label>
+			  <div class="col-md-8">
+			  <input id="nome" name="nome" type="text" placeholder="" class="form-control input-md" required="required">
+
+			  </div>
+			</div>
+
+			<!-- Text input-->
+			<div class="form-group">
+			  <label class="col-md-4 control-label" for="datanascimento">Data de Nascimento</label>
+			  <div class="col-md-4">
+			  <input id="datanascimento" name="datanascimento" type="date" min="31-12-1910" placeholder="dd/mm/aaaa" class="form-control input-md" required="required">
+
+			  </div>
+			</div>
+
+			<!-- Text input-->
+			<div class="form-group">
+			  <label class="col-md-4 control-label" for="filiacao">Filiação</label>
+			  <div class="col-md-8">
+			  <input id="filiacao" name="filiacao" type="text" placeholder="Nome do Pai e da Mãe completo" class="form-control input-md" required="required">
+			  </div>
+			</div>
+
+			<!-- Text input-->
+			<div class="form-group">
+			  <label class="col-md-4 control-label" for="identidade">RG</label>
+			  <div class="col-md-5">
+			  <input id="identidade" name="identidade" type="text" placeholder="99.999.999-9" class="form-control input-md" required="required">
+			  </div>
+			</div>
+
+			<!-- Text input-->
+			<div class="form-group">
+			  <label class="col-md-4 control-label" for="orgao">Orgão Expedidor</label>
+			  <div class="col-md-2">
+			  <input id="orgao" name="orgao" type="text" placeholder="" class="form-control input-md" required="required">
+
+			  </div>
+			</div>
+
+			<!-- Text input-->
+			<div class="form-group">
+			  <label class="col-md-4 control-label" for="naturalidade">Naturalidade</label>
+			  <div class="col-md-4">
+			  <input id="naturalidade" name="naturalidade" type="text" placeholder="local de nascimento(cidade/estado)" class="form-control input-md" required="required">
+			  </div>
+			</div>
+
+			<!-- Text input-->
+			<div class="form-group">
+			  <label class="col-md-4 control-label" for="nacionalidade">Nacionalidade</label>
+			  <div class="col-md-4">
+			  <input id="nacionalidade" name="nacionalidade" type="text" placeholder="País de origem" class="form-control input-md" required="required">
+			  </div>
+			</div>
+
+			<!-- Select Basic -->
+			<div class="form-group">
+			  <label class="col-md-4 control-label" for="escolaridade">Escolaridade</label>
+			  <div class="col-md-6">
+			    <select id="escolaridade" name="escolaridade" class="form-control">
+			      <option value="Ensino fundamental incompleto">Ensino fundamental incompleto</option>
+			      <option value="Ensino fundamental completo">Ensino fundamental completo</option>
+			      <option value="Ensino médio incompleto">Ensino médio incompleto</option>
+			      <option value="Ensino médio completo">Ensino médio completo</option>
+			      <option value="Ensino superior incompleto">Ensino superior incompleto</option>
+			      <option value="Ensino superior completo">Ensino superior completo</option>
+			      <option value="Pós-graduação">Pós-graduação</option>
+			    </select>
+			  </div>
+			</div>
+
+			<!-- Text input-->
+			<div class="form-group">
+			  <label class="col-md-4 control-label" for="fone">Telefone ou Celular</label>
+			  <div class="col-md-4">
+			  <input id="fone" name="fone" type="text" placeholder="" class="form-control input-md" required="required">
+			  <span class="help-block">Informe número do Telefone fixo ou Celular com ddd</span>
+			  </div>
+			</div>
+
+			<!-- Text input-->
+			<div class="form-group">
+			  <label class="col-md-4 control-label" for="email">E-mail</label>
+			  <div class="col-md-5">
+			  <input id="email" name="email" type="text" placeholder="email@mail.com" class="form-control input-md" required="required">
+			  </div>
+			</div>
+
+			<!-- Text input-->
+			<div class="form-group">
+			  <label class="col-md-4 control-label" for="endereco">Endereço</label>
+			  <div class="col-md-8">
+			  <input id="endereco" name="endereco" type="text" placeholder="ex: Rua X Bairro Y nº00 Quadra - 00" class="form-control input-md" required="required">
+			  </div>
+			</div>
+
+			<!-- Text input-->
+			<div class="form-group">
+			  <label class="col-md-4 control-label" for="bairro">Bairro</label>
+			  <div class="col-md-4">
+			  <input id="bairro" name="bairro" type="text" class="form-control input-md" required="required">
+			  </div>
+			</div>
+
+			<!-- Text input-->
+			<div class="form-group">
+			  <label class="col-md-4 control-label" for="cidade">Cidade/Estado</label>
+			  <div class="col-md-4">
+			  <input id="cidade" name="cidade" type="text" placeholder="ex.: São Luís-MA" class="form-control input-md" required="required">
+			  </div>
+			</div>
+
+			<br />
+			<h3>Vida Familiar</h3>
+			<hr>
+
+			<br />
+
+			<!-- Select Basic -->
+			<div class="form-group">
+			  <label class="col-md-4 control-label" for="estadocivil">Estado Civil</label>
+			  <div class="col-md-4">
+			    <select id="estadocivil" name="estadocivil" class="form-control">
+			      <option value="Solteiro(a)">Solteiro(a)</option>
+			      <option value="Casado(a)">Casado(a)</option>
+			      <option value="Divorciado(a)">Divorciado(a)</option>
+			      <option value="Viúvo(a)">Viúvo(a)</option>
+			    </select>
+			  </div>
+			</div>
+
+			<!-- Select Basic -->
+			<div class="form-group">
+			  <label class="col-md-4 control-label" for="filhos">Possui filhos?</label>
+			  <div class="col-md-4">
+			    <select id="filhos" name="filhos" class="form-control">
+			      <option value="Sim">Sim</option>
+			      <option value="Não">Não</option>
+			    </select>
+			  </div>
+			</div>
+
+			<!-- Select Basic -->
+			<div class="form-group">
+			  <label class="col-md-4 control-label" for="filhos">Mora com:</label>
+			  <div class="col-md-4">
+			    <select id="mora_com" name="mora_com" class="form-control">
+			      <option value="Sozinho">Sozinho</option>
+			      <option value="Pais">Pais</option>
+			      <option value="Conjugue">Conjugue</option>
+ 			      <option value="Familia">Família</option>
+			      <option value="Parentes">Parentes</option>
+			    </select>
+			  </div>
+			</div>
+
+			<br />
+			<h3>Vida Profissional</h3>
+			<hr>
+
+			<br />
+
+			<!-- Text input-->
+			<div class="form-group">
+			  <label class="col-md-4 control-label" for="ocupacao">Qual sua ocupação?</label>
+			  <div class="col-md-5">
+			  <input id="ocupacao" name="ocupacao" type="text" placeholder="ex: Professor" class="form-control input-md" required="required">
+			  <span class="help-block">Com o que você trabalha?</span>
+			  </div>
+			</div>
+
+			<!-- Text input-->
+			<div class="form-group">
+			  <label class="col-md-4 control-label" for="empresa">Empresa/ Repartição</label>
+			  <div class="col-md-5">
+			  <input id="empresa" name="empresa" type="text" placeholder="" class="form-control input-md" required="required">
+
+			  </div>
+			</div>
+
+			<!-- Select Basic -->
+			<div class="form-group">
+			  <label class="col-md-4 control-label" for="gostadoquefaz">Você gosta do que faz?</label>
+			  <div class="col-md-2">
+			    <select required id="gostadoquefaz" name="gostadoquefaz" class="form-control">
+			      <option value="Sim">Sim</option>
+			      <option value="Não">Não</option>
+			    </select>
+			  </div>
+			</div>
+
+			<!-- Select Basic -->
+			<div class="form-group">
+			  <label class="col-md-4 control-label" for="estabilidade">Você se sente estável no seu trabalho?</label>
+			  <div class="col-md-2">
+			    <select required id="estabilidade" name="estabilidade" class="form-control">
+			      <option value="Sim">Sim</option>
+			      <option value="Não">Não</option>
+			    </select>
+			  </div>
+			</div>
+
+			<!-- Textarea -->
+			<div class="form-group">
+			  <label class="col-md-4 control-label" for="atividades">Outras Atividades</label>
+			  <div class="col-md-8">
+			    <textarea class="form-control" id="atividades" name="atividades"></textarea>
+			  </div>
+			</div>
+
+			<!-- Select Basic -->
+			<div class="form-group">
+			  <label class="col-md-4 control-label" for="antecedentes">Você tem antecedentes criminais?</label>
+			  <div class="col-md-2">
+			    <select required id="antecedentes" name="antecedentes" class="form-control">
+			      <option value="Sim">Sim</option>
+			      <option value="Não">Não</option>
+			    </select>
+			  </div>
+			</div>
+
+			<!-- Textarea -->
+			<div class="form-group">
+			  <label class="col-md-4 control-label" for="relate">Relate o fato:</label>
+			  <div class="col-md-8">
+			    <textarea class="form-control" id="relate" name="relate"></textarea>
+			  </div>
+			</div>
+			<hr>
+		<input type="button" name="next" class="next action-button btn-success" value="Próximo" />
+	</fieldset>
+	<br>
+<!-- FIM DADOS PESSOAIS -->
+
+
+<!-- SAÚDE E COMPORTAMENTO -->
+	<fieldset>
+		<h2 class="fs-title">Saúde e Comportamento</h2>
+		<h3 class="fs-subtitle">Etapa 2 de 3</h3>
+		<hr>
+
+		<!-- Form Name -->
+
+				<!-- Select Basic -->
+				<div class="form-group">
+				  <label class="col-md-4 control-label" for="doencagrave">Você já teve alguma doença grave?</label>
+				  <div class="col-md-2">
+				    <select id="doencagrave" name="doencagrave" class="form-control">
+				      <option value="Sim">Sim</option>
+				      <option value="Não">Não</option>
+				    </select>
+				  </div>
+				</div>
+
+				<!-- Text input-->
+				<div class="form-group">
+				  <label class="col-md-4 control-label" for="qualdoenca">Qual / Quando?</label>
+				  <div class="col-md-5">
+				  <input id="qualdoenca" name="qualdoenca" type="text" placeholder="" class="form-control input-md" >
+
+				  </div>
+				</div>
+
+				<!-- Select Basic -->
+				<div class="form-group">
+				  <label class="col-md-4 control-label" for="cirurgia">Já fez alguma cirurgia?</label>
+				  <div class="col-md-2">
+				    <select id="cirurgia" name="cirurgia" class="form-control">
+				      <option value="Sim">Sim</option>
+				      <option value="Não">Não</option>
+				    </select>
+				  </div>
+				</div>
+
+				<!-- Text input-->
+				<div class="form-group">
+				  <label class="col-md-4 control-label" for="qualcirurgia">Qual / Quando?</label>
+				  <div class="col-md-5">
+				  <input id="qualcirurgia" name="qualcirurgia" type="text" placeholder="" class="form-control input-md">
+
+				  </div>
+				</div>
+
+				<!-- Select Basic -->
+				<div class="form-group">
+				  <label class="col-md-4 control-label" for="problemasaude">Atualmente, tem algum problema de saúde?</label>
+				  <div class="col-md-2">
+				    <select id="problemasaude" name="problemasaude" class="form-control">
+				      <option value="Sim">Sim</option>
+				      <option value="Não">Não</option>
+				    </select>
+				  </div>
+				</div>
+
+				<!-- Text input-->
+				<div class="form-group">
+				  <label class="col-md-4 control-label" for="qualproblemasaude">Qual?</label>
+				  <div class="col-md-4">
+				  <input id="qualproblemasaude" name="qualproblemasaude" type="text" placeholder="" class="form-control input-md">
+
+				  </div>
+				</div>
+
+				<!-- Select Basic -->
+				<div class="form-group">
+				  <label class="col-md-4 control-label" for="tratamento">Está fazendo algum tipo de tratamento?</label>
+				  <div class="col-md-2">
+				    <select id="tratamento" name="tratamento" class="form-control">
+				      <option value="Sim">Sim</option>
+				      <option value="Não">Não</option>
+				    </select>
+				  </div>
+				</div>
+
+				<!-- Text input-->
+				<div class="form-group">
+				  <label class="col-md-4 control-label" for="qualtratamento">Qual?</label>
+				  <div class="col-md-4">
+				  <input id="qualtratamento" name="qualtratamento" type="text" placeholder="" class="form-control input-md">
+
+				  </div>
+				</div>
+
+				<!-- Select Basic -->
+				<div class="form-group">
+				  <label class="col-md-4 control-label" for="remedio">Toma algum tipo de remédio?</label>
+				  <div class="col-md-2">
+				    <select id="remedio" name="remedio" class="form-control">
+				      <option value="Sim">Sim</option>
+				      <option value="Não">Não</option>
+				    </select>
+				  </div>
+				</div>
+
+				<!-- Text input-->
+				<div class="form-group">
+				  <label class="col-md-4 control-label" for="qualremedio">Qual?</label>
+				  <div class="col-md-5">
+				  <input id="qualremedio" name="qualremedio" type="text" placeholder="" class="form-control input-md">
+
+				  </div>
+				</div>
+
+				<!-- Select Basic -->
+				<div class="form-group">
+				  <label class="col-md-4 control-label" for="bebidaalcoolica">Faz uso de bebida alcoólica?</label>
+				  <div class="col-md-2">
+				    <select id="bebidaalcoolica" name="bebidaalcoolica" class="form-control">
+				      <option value="Sim">Sim</option>
+				      <option value="Não">Não</option>
+				    </select>
+				  </div>
+				</div>
+
+				<!-- Text input-->
+				<div class="form-group">
+				  <label class="col-md-4 control-label" for="frequenciabebida">Com que freqüência?</label>
+				  <div class="col-md-4">
+				  <input id="frequenciabebida" name="frequenciabebida" type="text" placeholder="" class="form-control input-md">
+
+				  </div>
+				</div>
+
+				<!-- Select Basic -->
+				<div class="form-group">
+				  <label class="col-md-4 control-label" for="drogailicita">Você consome ou já consumiu algum tipo de droga ilícita?</label>
+				  <div class="col-md-2">
+				    <select id="drogailicita" name="drogailicita" class="form-control">
+				      <option value="Sim">Sim</option>
+				      <option value="Não">Não</option>
+				    </select>
+				  </div>
+				</div>
+
+				<!-- Text input-->
+				<div class="form-group">
+				  <label class="col-md-4 control-label" for="qualdroga">Qual? Com que freqüência?</label>
+				  <div class="col-md-5">
+				  <input id="qualdroga" name="qualdroga" type="text" placeholder="" class="form-control input-md">
+
+				  </div>
+				</div>
+
+				<!-- Select Basic -->
+				<div class="form-group">
+				  <label class="col-md-4 control-label" for="drogapreju">Você acha que seu uso de bebida ou droga trouxe prejuízos à sua vida?</label>
+				  <div class="col-md-2">
+				    <select id="drogapreju" name="drogapreju" class="form-control">
+				      <option value="Sim">Sim</option>
+				      <option value="Não">Não</option>
+				    </select>
+				  </div>
+				</div>
+
+				<!-- Text input-->
+				<div class="form-group">
+				  <label class="col-md-4 control-label" for="qualpreju">Quais?</label>
+				  <div class="col-md-5">
+				  <input id="qualpreju" name="qualpreju" type="text" placeholder="" class="form-control input-md">
+
+				  </div>
+				</div>
+
+				<!-- Select Basic -->
+				<div class="form-group">
+				  <label class="col-md-4 control-label" for="controleuso">Já sentiu dificuldade em controlar este uso de bebida ou droga?</label>
+				  <div class="col-md-2">
+				    <select id="controleuso" name="controleuso" class="form-control">
+				      <option value="Sim">Sim</option>
+				      <option value="Não">Não</option>
+				    </select>
+				  </div>
+				</div>
+
+				<!-- Textarea -->
+				<div class="form-group">
+				  <label class="col-md-4 control-label" for="comentecontroleuso">Comente:</label>
+				  <div class="col-md-4">
+				    <textarea class="form-control" id="comentecontroleuso" name="comentecontroleuso"></textarea>
+				  </div>
+				</div>
+
+				<!-- Select Basic -->
+				<div class="form-group">
+				  <label class="col-md-4 control-label" for="maniaperseguido">Você já teve a sensação de estar sendo perseguido ou já se sentiu ameaçado por alguém?</label>
+				  <div class="col-md-2">
+				    <select id="maniaperseguido" name="maniaperseguido" class="form-control">
+				      <option value="Sim">Sim</option>
+				      <option value="Não">Não</option>
+				    </select>
+				  </div>
+				</div>
+
+				<!-- Textarea -->
+				<div class="form-group">
+				  <label class="col-md-4 control-label" for="comentemania">Comente:</label>
+				  <div class="col-md-4">
+				    <textarea class="form-control" id="comentemania" name="comentemania"></textarea>
+				  </div>
+				</div>
+
+				<!-- Select Basic -->
+				<div class="form-group">
+				  <label class="col-md-4 control-label" for="dificuldadeordenar">Você já teve a sensação de não conseguir ordenar seus pensamentos por horas ou dias?</label>
+				  <div class="col-md-2">
+				    <select id="dificuldadeordenar" name="dificuldadeordenar" class="form-control">
+				      <option value="Sim">Sim</option>
+				      <option value="Não">Não</option>
+				    </select>
+				  </div>
+				</div>
+
+				<!-- Textarea -->
+				<div class="form-group">
+				  <label class="col-md-4 control-label" for="comentedificuldade">Comente:</label>
+				  <div class="col-md-4">
+				    <textarea class="form-control" id="comentedificuldade" name="comentedificuldade"></textarea>
+				  </div>
+				</div>
+
+				<!-- Select Basic -->
+				<div class="form-group">
+				  <label class="col-md-4 control-label" for="pensamentoacelerado">Você já viveu alguma situação em que seus pensamentos estavam muito acelerados, que você não conseguia acompanhá-los?</label>
+				  <div class="col-md-2">
+				    <select id="pensamentoacelerado" name="pensamentoacelerado" class="form-control">
+				      <option value="Sim">Sim</option>
+				      <option value="Não">Não</option>
+				    </select>
+				  </div>
+				</div>
+
+				<!-- Textarea -->
+				<div class="form-group">
+				  <label class="col-md-4 control-label" for="comentepensamento">Comente:</label>
+				  <div class="col-md-4">
+				    <textarea class="form-control" id="comentepensamento" name="comentepensamento"></textarea>
+				  </div>
+				</div>
+
+				<!-- Select Basic -->
+				<div class="form-group">
+				  <label class="col-md-4 control-label" for="internado">Já foi internado em alguma instituição psiquiátrica?</label>
+				  <div class="col-md-2">
+				    <select id="internado" name="internado" class="form-control">
+				      <option value="Sim">Sim</option>
+				      <option value="Não">Não</option>
+				    </select>
+				  </div>
+				</div>
+
+				<!-- Textarea -->
+				<div class="form-group">
+				  <label class="col-md-4 control-label" for="internacaomotivo">Onde? Qual motivo?</label>
+				  <div class="col-md-4">
+				    <textarea class="form-control" id="internacaomotivo" name="internacaomotivo"></textarea>
+				  </div>
+				</div>
+
+
+				</div>
+
+
+		<hr>
+		<input type="button" name="previous" class="previous action-button btn-success" value="Anterior" />
+		<input type="button" name="next" class="next action-button btn-success" value="Próximo" />
+	</fieldset>
+<!-- FIM SAÚDE E COMPORTAMENTO -->
+
+
+<!-- ESPIRITUALIDADE -->
+	<fieldset>
+		<h2 class="fs-title">Espiritualidade</h2>
+		<h3 class="fs-subtitle">Etapa 3 de 3</h3>
+		<hr>
+
+		<!-- Form Name -->
+		<!-- Select Basic -->
+				<div class="form-group">
+				  <label class="col-md-4 control-label" for="consagrou">Você consagrou o Daime alguma vez?</label>
+				  <div class="col-md-2">
+				    <select id="consagrou" name="consagrou" class="form-control">
+				      <option value="Sim">Sim</option>
+				      <option value="Não">Não</option>
+				    </select>
+				  </div>
+				</div>
+
+				<!-- Text input-->
+				<div class="form-group">
+				  <label class="col-md-4 control-label" for="ondecomquem">Onde? Com quem?</label>
+				  <div class="col-md-6">
+				  <input id="ondecomquem" name="ondecomquem" type="text" placeholder="" class="form-control input-md">
+				  </div>
+				</div>
+
+				<!-- Text input-->
+				<div class="form-group">
+				  <label class="col-md-4 control-label" for="relateexperiencia">Relate a Experiência</label>
+				  <div class="col-md-4">
+				    <textarea class="form-control" id="relateexperiencia" name="relateexperiencia"></textarea>
+				  </div>
+				</div>
+
+				<!-- Select Basic -->
+				<div class="form-group">
+				  <label class="col-md-4 control-label" for="religiao">Você atualmente é adepto de alguma religião?</label>
+				  <div class="col-md-2">
+				    <select id="religiao" name="religiao" class="form-control">
+				      <option value="Sim">Sim</option>
+				      <option value="Não">Não</option>
+				    </select>
+				  </div>
+				</div>
+
+				<!-- Text input-->
+				<div class="form-group">
+				  <label class="col-md-4 control-label" for="qualreligiao">Qual?</label>
+				  <div class="col-md-4">
+				  <input id="qualreligiao" name="qualreligiao" type="text" placeholder="" class="form-control input-md">
+
+				  </div>
+				</div>
+
+				<!-- Textarea -->
+				<div class="form-group">
+				  <label class="col-md-4 control-label" for="praticareligiosa">O que busca em sua prática religiosa?</label>
+				  <div class="col-md-4">
+				    <textarea class="form-control" id="praticareligiosa" name="praticareligiosa"></textarea>
+				  </div>
+				</div>
+
+				<!-- Select Basic -->
+				<div class="form-group">
+				  <label class="col-md-4 control-label" for="experienciaespiritual">Segundo seus próprios critérios, já teve alguma experiência espiritual marcante?</label>
+				  <div class="col-md-2">
+				    <select id="experienciaespiritual" name="experienciaespiritual" class="form-control">
+				      <option value="Sim">Sim</option>
+				      <option value="Não">Não</option>
+				    </select>
+				  </div>
+				</div>
+
+				<!-- Textarea -->
+				<div class="form-group">
+				  <label class="col-md-4 control-label" for="comofoi">Como foi?</label>
+				  <div class="col-md-4">
+				    <textarea class="form-control" id="comofoi" name="comofoi"></textarea>
+				  </div>
+				</div>
+
+				<!-- Select Basic -->
+				<div class="form-group">
+				  <label class="col-md-4 control-label" for="espiritualajuda">Você acredita que o desenvolvimento espiritual possa lhe ajudar?</label>
+				  <div class="col-md-2">
+				    <select id="espiritualajuda" name="espiritualajuda" class="form-control">
+				      <option value="Sim">Sim</option>
+				      <option value="Não">Não</option>
+				    </select>
+				  </div>
+				</div>
+
+				<!-- Textarea -->
+				<div class="form-group">
+				  <label class="col-md-4 control-label" for="emque">Em que?</label>
+				  <div class="col-md-4">
+				    <textarea class="form-control" id="emque" name="emque"></textarea>
+				  </div>
+				</div>
+
+				<!-- Textarea -->
+				<div class="form-group">
+				  <label class="col-md-4 control-label" for="comosoube">Como soube do Santo Daime?</label>
+				  <div class="col-md-4">
+				    <textarea class="form-control" id="comosoube" name="comosoube"></textarea>
+				  </div>
+				</div>
+
+				<!-- Select Basic -->
+				<div class="form-group">
+				  <label class="col-md-4 control-label" for="daimeutil">Acredita que o Santo Daime possa ser útil a você?</label>
+				  <div class="col-md-2">
+				    <select id="daimeutil" name="daimeutil" class="form-control">
+				      <option value="Sim">Sim</option>
+				      <option value="Não">Não</option>
+				    </select>
+				  </div>
+				</div>
+
+				<!-- Textarea -->
+				<div class="form-group">
+				  <label class="col-md-4 control-label" for="porque">Por quê?</label>
+				  <div class="col-md-4">
+				    <textarea class="form-control" id="porque" name="porque"></textarea>
+				  </div>
+				</div>
+
+
+
+		<hr>
+		<input type="button" name="previous" class="previous action-button btn-success" value="Anterior" />
+		<input type="button" name="next" class="next action-button btn-success" value="Próximo" />
+	</fieldset>
+<!-- /ESPIRITUALIDADE -->
+
+
+<!-- TERMO DE RESPONSABILIDADE -->
+
+	<fieldset>
+			<h2 class="fs-title">TERMO DE RESPONSABILIDADE</h2>
+			<hr>
+			<div class="form-group">
+				<p class="text-center"><b>Eu, abaixo assinado, venho de livre e espontânea vontade solicitar o ingresso
+					às sessões espirituais com o Santo Daime, no CENTRO DE ILUMINAÇÃO
+					CRISTÃ ESTRELA BRILHANTE RAIMUNDO IRINEU SERRA-CICEBRIS.
+					Declaro que participei da reunião, onde tomei ciência da natureza
+					destes trabalhos, bem como da preparação exigida, dos detalhes do ritual e da
+					condição expressa de permanecer na igreja até o fechamento dos trabalhos,
+					assim como da proibição de portar ou usar quaisquer substâncias proscritas
+					pela lei penal brasileira, bebidas alcoólicas, armas brancas ou de fogo. Declaro
+					também que obedecerei a todas as determinações dos fiscais e do diretor dos
+					trabalhos, que contribuirei para os custos de obtenção do Santo Daime e da
+					manutenção da igreja (fixados na secretaria).</b></p><br />
+
+					<p>Paço do Lumiar,  angulardate </p>
+
+						<label class="col-md-4 control-label" for="checkboxes"><input type="checkbox" name="checkboxes" id="checkboxes-0" value="concordo"></label>
+					  	<div class="col-md-4">
+					    <label for="checkboxes-0">Li Concordo com o Termo de Responsabilidade.</label>
+					  	</div>
+			</div>
+
+
+			<hr>
+			<input type="button" name="previous" class="previous action-button btn-success" value="Anterior" />
+			<input type="submit" name="submit" class="submit action-button btn-success" value="Enviar" />
+
+		</fieldset>
+
+</form>
+<br>
+<link rel="stylesheet" href="styles/anamnese.css">
+
+<!-- jQuery easing plugin -->
+<script src="http://thecodeplayer.com/uploads/js/jquery.easing.min.js" type="text/javascript"></script>
+
+<!-- jQuery scripts -->
+<script src="scripts/lib/jquery.maskedinput.js" charset="utf-8"></script>
+<script src="scripts/lib/jquery.anamnese.js" charset="utf-8"></script>
+
+
+<script type="text/javascript">
+// Mascaras de inputs
+jQuery(function($) {
+$("#datanascimento").mask("99/99/9999"); //data
+$("#fone").mask("(999) 999-9999"); //telefone
+$("#identidade").mask("99.999.999-9"); //RG
+});
+</script>
