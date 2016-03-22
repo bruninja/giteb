@@ -14,7 +14,7 @@
 		</div>
 		<div class="row">
 			<p>
-				<a href="http://estrelabrilhante.zz.vc/html/anamnese.html" class="btn btn-success"> Criar Nova </a>
+				<a href="http://estrelabrilhante.zz.vc/views/anamnese/index.html" class="btn btn-success"> Criar Nova </a>
 			</p>
 		</div>
 		<div class="row">
@@ -24,7 +24,7 @@
 						<th>Nome</th>
 						<th>Email</th>
 						<th>Telefone</th>
-						
+
 					</tr>
 				</thead>
 				<tbody>
@@ -52,4 +52,3 @@
 		</div> <!-- /container -->
 </body>
 </html>
-
