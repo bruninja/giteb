@@ -47,14 +47,22 @@ angular.module('formApp', ['ngAnimate', 'ui.router'])
 
 // our controller for the form
 // =============================================================================
-.controller('formController', function($scope) {
+.controller('formController', function($scope, $http, $timeout) {
 
     // we will store all of our form data in this object
     $scope.formData = {};
 
     // function to process the form
     $scope.processForm = function() {
-        alert('awesome!');
+      $http({
+        method :'POST',
+        url    :'php/script.php',
+        data   :$.param($scope.formData),
+        headers:{'Content-Type': 'application/x-www-form-urlencoded'}
+      }).success(function(data){
+        alert('enviado!');
+      })
+
     };
 
 });
