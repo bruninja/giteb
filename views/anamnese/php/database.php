@@ -1,10 +1,10 @@
 <?php
 class Database
 {
-	private static $dbName = 'u252164543_anamn';
+	private static $dbName = 'u309374182_anamn';
 	private static $dbHost = 'mysql.hostinger.com.br';
-	private static $dbUsername = 'u252164543_root';
-	private static $dbUserPassword = 'Altosanto2015';
+	private static $dbUsername = 'u309374182_root';
+	private static $dbUserPassword = 'Cicebris2016';
 
 	private static $cont = null;
 
