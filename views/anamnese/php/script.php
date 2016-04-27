@@ -69,9 +69,9 @@
 
 //Conexão com o Banco de Dados
 	$hostname = 'mysql.hostinger.com.br';
-	$username = 'u252164543_root';
+	$username = 'u571029576_root';
 	$password = 'Altosanto2015';
-	$database = 'u252164543_anamn';
+	$database = 'u571029576_anamn';
 
 	$pdo = new PDO("mysql:host=$hostname;dbname=$database", $username, $password);
    if(!$pdo){
