@@ -14,7 +14,7 @@
 		</div>
 		<div class="row">
 			<p>
-				<a href="http://estrelabrilhante.zz.vc/views/anamnese/index.html" class="btn btn-success"> Criar Nova </a>
+				<a href="../index.html"" class="btn btn-success"> Criar Nova </a>
 			</p>
 		</div>
 		<div class="row">
