@@ -42,6 +42,11 @@ var app = angular.module('cicebrisApp', ['ngResource','ngRoute']);
         controller: 'AnamneseCtrl',
         controllerAs: 'anamnese'
       })
+      .when('/enviado', {
+        templateUrl: 'views/anamnese/enviado.html',
+        controller: 'EnviadoCtrl',
+        controllerAs: 'enviado'
+      })
       .otherwise({
         redirectTo: '/'
       });
