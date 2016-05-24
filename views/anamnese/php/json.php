@@ -1,6 +1,4 @@
 <?php
-// Get post data
-$data = json_decode(file_get_contents("php://input"));
 // RECEBIMENTO DOS DADOS
 	$nome = $_POST["nome"];
 	$datanascimento = $_POST["datanascimento"];
@@ -70,10 +68,10 @@ $data = json_decode(file_get_contents("php://input"));
 	$porque = $_POST["porque"];
 
 //Conexão com o Banco de Dados
-	$hostname = 'localhost';
-	$username = 'root';
-	$password = 'prospero888';
-	$database = 'anamnese';
+	$hostname = 'mysql.hostinger.com.br';
+	$username = 'u252164543_root';
+	$password = 'Altosanto2015';
+	$database = 'u252164543_anamn';
 
 	$pdo = new PDO("mysql:host=$hostname;dbname=$database", $username, $password);
    if(!$pdo){
