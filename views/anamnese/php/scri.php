@@ -74,10 +74,10 @@ $data = json_decode($postdata);
 	@$porque = $data->porque;
 
 //Conexão com o Banco de Dados
-	$hostname = 'localhost';
-	$username = 'root';
-	$password = 'prospero888';
-	$database = 'anamnese';
+	$hostname = 'mysql.hostinger.com.br';
+	$username = 'u571029576_root';
+	$password = 'Altosanto2015';
+	$database = 'u571029576_anamn';
 
 	$pdo = new PDO("mysql:host=$hostname;dbname=$database", $username, $password);
    if(!$pdo){
