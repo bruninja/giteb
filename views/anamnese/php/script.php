@@ -222,7 +222,7 @@ if($executa){
     $assunto = "Foi preenchida uma ficha de anamnese";
     $corpo = '
     Foi preenchida a ficha de '.$nome.'.
-    Para visualizar todas as fichas clique no seguinte link: http://estrelabrilhante.zz.vc/views/anamnese/php/';
+    Para visualizar todas as fichas clique no seguinte link: http://cicebris.esy.es/views/anamnese/php/';
 
 
     $headers = "MIME-Version: 1.0";
