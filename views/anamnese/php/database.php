@@ -4,7 +4,7 @@ class Database
 	private static $dbName = 'u571029576_anamn';
 	private static $dbHost = 'mysql.hostinger.com.br';
 	private static $dbUsername = 'u571029576_root';
-	private static $dbUserPassword = 'GeSeRa';
+	private static $dbUserPassword = 'Altosanto2015';
 
 	private static $cont = null;
 

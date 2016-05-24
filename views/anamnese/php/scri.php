@@ -1,9 +1,8 @@
 <?php
 // Get post data
-// $jsonObj = '{"nome":"JSON da SIlva Sauro","filiacao":"Antonio e Dulcilene","identidade":"109273010018","orgao":"SSpMA","naturalidade":"São Luís","nacionalidade":"Brasil","escolaridade":"Pós-graduação","fone":"98987781518","email":"bruno@mail.com","endereco":"Rua X Bairro Y","bairro":"Cohafuma","cidade":"São Luís/MA","estadocivil":"Solteiro(a)","filhos":"Não","mora_com":"Conjugue","ocupacao":"Desenvolvedor Web","empresa":"Freelancer","gostadoquefaz":"Sim","estabilidade":"Não","atividades":"Yoga","antecedentes":"Não","relate":"","doencagrave":"Não","cirurgia":"Não","problemasaude":"Não","tratamento":"Não","remedio":"Não","bebidaalcoolica":"Não","drogailicita":"Não","drogapreju":"Não","controleuso":"Não","maniaperseguido":"Não","dificuldadeordenar":"Não","pensamentoacelerado":"Não","internado":"Não","consagrou":"Sim","ondecomquem":"Na estrela Brilhande na companhia de Deus e Nossa Senhora","relateexperiencia":"Foi muito boa.","religiao":"Sim","qualreligiao":"Santo Daime","praticareligiosa":"Paz, autoconhecimento e equilibrio interior","experienciaespiritual":"Sim","comofoi":"Eu vi uma entidade","espiritualajuda":"Sim","emque":"Me tornar uma pessoa autoconsciente","comosoube":"Através de um amigo","daimeutil":"Sim","porque":"Luz"}';
-// $data = json_decode($jsonObj);
 $postdata = file_get_contents("php://input");
 $data = json_decode($postdata);
+
 // RECEBIMENTO DOS DADOS
 
 

@@ -72,7 +72,7 @@ $data = json_decode(file_get_contents("php://input"));
 //Conexão com o Banco de Dados
 	$hostname = 'mysql.hostinger.com.br';
 	$username = 'u571029576_root';
-	$password = 'GeSeRa';
+	$password = 'Altosanto2015';
 	$database = 'u571029576_anamn';
 
 	$pdo = new PDO("mysql:host=$hostname;dbname=$database", $username, $password);
