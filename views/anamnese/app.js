@@ -74,7 +74,6 @@ angular.module('formApp', ['ngAnimate', 'ui.router'])
           data: $scope.formData
         }).success(function(resp){
           $scope.codeStatus =  resp.data;
-          alert('Enviado');
           window.location="enviado.html";
         }).error(function(resp){
           $scope.codeStatus = resp||"Failed";
